@@ -45,10 +45,13 @@ Após a capacitação, acreditamos que você será capaz de executar o desafio f
 1. Faça o Fork do repositório [https://github.com/SACI-UFLA/onboarding-2026-2](https://github.com/SACI-UFLA/onboarding-2026-2) para sua conta do GitHub.
 2. Clone o repositório para sua máquina local (ou PC do lab).
 3. Crie uma Branch com o seu nome (ex: `feat/joao-silva`).
-4. Na pasta `candidatos/`, utilize o template `seu-nome.md` para preenchê-lo e modificá-lo de acordo com seus dados e resposta.
-5. Responda à pergunta sobre **RFID vs NFC**, faça o Commit, Push e abra o Pull Request.
+4. Na pasta `onboarding-2026-2/Trilhas/Hardware Hackig/`, utilize o template `seu-nome.md` para preencher com seus dados e responda a pergunta contida no template. 
 
-* **Entrega:** Na pasta `candidatos/entregas/`, crie um arquivo chamado `bloco1.txt` e adicione o link do Pull Request da sua branch para a `main`.
+  * Crie a sua estrutura de entregas: Dentro de`candidatos/entregas/` crie uma pasta chamada `trilhaHardwareHacking`.
+
+5. Responda à pergunta sobre **RFID vs NFC** contida nno template, faça o Commit e abra o Pull Request.
+
+* **Entrega:** Dentro de `trilhaHardwareHacking` crie uma nova pasta chamada `bloco1` e adicione o link do Pull Request da sua branch para a `main`.
 
 ---
 
@@ -56,11 +59,16 @@ Após a capacitação, acreditamos que você será capaz de executar o desafio f
 **Objetivo (PRESENCIAL OBRIGATÓRIO):** Compilação dos clientes e primeiro contato direto com o leitor RFID/NFC Proxmark3.
 
 1. **Aulas no Lab (Sextas, 10h às 12h):** Compareça ao Lab 2 para conectar o Proxmark3 do núcleo.
-2. **Prática Proxmark3:** Execute os comandos de baixo nível (`hf search`, `lf search`, leitura de UID) e garanta que o hardware é reconhecido e responde sem erros no terminal.
+
+2. **Prática Proxmark3:** Execute os comandos de baixo nível:
+   - o terminal do computador usado, inicie o cli do Proxmark3 com este comando: `pm3` 
+   - Após conectar ao cli, posicione uma tag ou cartão no proxymark e execute estes comandos básicos:
+     - `hf search` - para identificar tags HF (13.56 MHz)
+     - `lf search` - para identificar tags LF (125 kHz)
+
 3. **Validação Raspberry Pi:** No ambiente Linux (seu note ou PC do lab), instale e valide o funcionamento do `responder` e do `john` (`responder -h`).
 
-* **Entrega:** Na pasta `candidatos/entregas/`, adicione os prints do terminal mostrando a comunicação real com o cliente do Proxmark3 conectado e o comando do `responder` executado com sucesso.
-
+* **Entrega:** Dentro de `candidatos/entregas/trilhaHardwareHacking` crie uma nova pasta chamada `bloco2`, adicione os prints do terminal mostrando a comunicação real com o cliente do Proxmark3 conectado e o comando do `responder` executado com sucesso.
 ---
 
 ### Bloco 3: O Analista/Pesquisador [Semanas 5 e 6]
@@ -69,7 +77,7 @@ Após a capacitação, acreditamos que você será capaz de executar o desafio f
 1. **Pesquisa Técnica:** Estude o ataque de captura de credenciais via emulação de rede USB (Raspberry Pi Zero com `Responder`) e como ele explora protocolos legados (LLMNR, NetBIOS).
 2. **Relatório de Viabilidade:** Escreva um relatório curto (máximo 1 página) em PDF explicando o vetor de ataque e os riscos de acesso físico às portas USB.
 
-* **Entrega:** Na pasta `candidatos/entregas/`, suba o relatório em PDF referente à sua pesquisa.
+* **Entrega:**Dentro de `candidatos/entregas/trilhaHardwareHacking` crie uma nova pasta chamada `bloco3`, suba o relatório em PDF referente à sua pesquisa.
 
 ---
 
