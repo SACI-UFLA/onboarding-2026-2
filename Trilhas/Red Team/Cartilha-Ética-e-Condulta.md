@@ -32,7 +32,7 @@ Para garantir a sua segurança jurídica e a integridade da capacitação, todo 
 2. **Respeite o Escopo (Scope):** Se um cliente autoriza um teste no subdomínio `api.empresa.com.br`, você não pode atacar `rh.empresa.com.br`. Sair do escopo invalida a autorização e o torna um invasor perante a lei.
 3. **Não cause indisponibilidade (Do No Harm):** Evite ferramentas automatizadas sem entender o que fazem. Ataques de Negação de Serviço (DDoS) ou payloads destrutivos (como dropar tabelas de banco de dados) só devem ser executados se explicitamente exigidos e aprovados no contrato.
 4. **Reporte Responsável (Responsible Disclosure):** Se você esbarrar em uma falha de segurança em um sistema externo acidentalmente, não a explore. Reporte o problema aos administradores de forma ética, privada e sem exigir recompensas sob ameaça (o que configura extorsão).
-5. **Sigilo Absoluto (NDA):** O que é descoberto no laboratório ou durante operações de Red Team da Emakers Jr. fica no escopo do projeto. O compartilhamento de vulnerabilidades com pessoas não autorizadas quebra o Acordo de Confidencialidade.
+5. **Sigilo Absoluto (NDA):** O que é descoberto no laboratório ou durante operações de Red Team do Saci. fica no escopo do projeto. O compartilhamento de vulnerabilidades com pessoas não autorizadas quebra o Acordo de Confidencialidade.
 
 ---
 
@@ -44,4 +44,3 @@ A participação na Trilha Red Team pressupõe a leitura, compreensão e aceita�
 > *"A segurança da informação é construída sobre a confiança. Seja um profissional digno dessa confiança."*
 
 ***
-*Para prosseguir com suas entregas no Bloco 1, declare no seu Pull Request que você leu e concorda com a Cartilha de Ética e Conduta.*
