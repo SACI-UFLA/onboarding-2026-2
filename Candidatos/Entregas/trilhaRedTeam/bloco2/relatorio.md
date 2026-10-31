@@ -51,7 +51,7 @@ As seguintes rotas foram identificadas:
 **Evidências:**
 ![Rota /#/administration](evidencias/administration.png)
 
-![Rota /#/score-board](evidencias/score-board.png)
+![Rota /#/score-board](evidencias/score.png)
 
 ![Rota /#/privacy-security/privacy-policy](evidencias/privacy_policy.png)
 
@@ -188,7 +188,7 @@ Entretanto, não foi comprovado se a manipulação desse campo concede benefíci
 **Recomendação:** implementar uma lista de campos permitidos para operações de cadastro, impedindo que atributos sensíveis sejam definidos diretamente pelo cliente. Campos relacionados a privilégios e benefícios devem ser controlados exclusivamente pelo servidor.
 
 **Evidências:**
-- evidencias/vulnerabilidade3.png
+![prova](evidencias/vulnerabilidade3.png)
 
 
 ### 5.4. Carrinhos de compras — possível IDOR
@@ -246,7 +246,7 @@ O token foi copiado e analisado por meio de um decodificador JWT, permitindo vis
 
 A análise permitiu compreender melhor como a aplicação utiliza tokens para transportar informações relacionadas à autenticação e à identificação do usuário.
 
-Foi possível observar que o conteúdo do token pode ser decodificado, pois utiliza codificação Base64URL. Isso não significa que o token foi descriptografado: a decodificação apenas permite visualizar os dados presentes no payload.
+Foi possível observar que o conteúdo do token pode ser decodificado, pois utiliza codificação Base64URL. Isso não significa que o token foi descriptografado: a decodificação apenas permite visualizar os dados.
 
 **Evidências:**
 
@@ -285,7 +285,6 @@ O procedimento de identificação consiste em:
 
 ![E-mail do administrador](evidencias/vulnerabilidade1.png)
 
-A identificação do e-mail não comprova, isoladamente, uma falha de autenticação ou acesso à conta. Seu valor nesta etapa está no reconhecimento de informações relacionadas a um usuário privilegiado.
 
 ## 7. Conclusão
 
